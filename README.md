@@ -15,7 +15,7 @@ mex dtwCPP.cpp
 
 Each folder should contain data files in `.mat` format, corresponding to the name of the folder. The resulting distance matrix and other results will be saved in these folders.
 
-## Pileline_042123.m
+## Pipeline_042123.m
 
 The `Pipeline_042123.m` script is designed to handle the complete data processing workflow. It performs the following tasks:
 

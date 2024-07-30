@@ -6,7 +6,7 @@ format long
 cutPercentile = 60; % Cut percentile used in hierarchical clustering
 numberDesiredClusters = 6; % Number of clusters to output
 %----------------------------------------------------------------------
-loadDist = 1; % Distance matrices option (0: Calculate new distance matrices, 1: Load pre-calculated)
+loadDist = 0; % Distance matrices option (0: Calculate new distance matrices, 1: Load pre-calculated)
 %fileNameDist = 'dist_xxxxxx_xxxxxx.mat'; %this file should contain cell
 %arrays.
 
@@ -41,7 +41,7 @@ minpts = 5; % minimum number of objects considered as a cluster
 %----------------------------------------------------------------------
 % Setting number of preprocesses, distance methods, postprocesses, and
 % aggregation methods. 
-numPre = 7;
+numPre = 3;
 numDist = 2;
 numPost = 3;
 numAgg = 6;
@@ -92,7 +92,6 @@ else
         dat = dat_orig;
 
         for distOpt = 1:numDist
-
             %-------------Calculate Distance matrices ----------------------------
             tic
 
